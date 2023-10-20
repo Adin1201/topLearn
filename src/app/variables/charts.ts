@@ -295,7 +295,7 @@ export const chartExample1 = {
         ticks: {
           callback: function(value) {
             if (!(value % 10)) {
-              return '$' + value + 'k';
+              return  value + 'KM';
             }
           }
         }
@@ -303,9 +303,9 @@ export const chartExample1 = {
     }
   },
   data: {
-    labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    labels: ['Maj', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
     datasets: [{
-      label: 'Performance',
+      label: 'Performanse',
       data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
     }]
   }
@@ -343,10 +343,10 @@ export const chartExample2 = {
     }
   },
   data: {
-    labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Jul", "Aug", "Sep", "Okt", "Nov", "Dec"],
     datasets: [
       {
-        label: "Sales",
+        label: "Prodaja",
         data: [25, 20, 30, 22, 17, 29],
         maxBarThickness: 10
       }
