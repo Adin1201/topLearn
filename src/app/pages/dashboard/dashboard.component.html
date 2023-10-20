@@ -8,8 +8,8 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0">Traffic</h5>
-                  <span class="h2 font-weight-bold mb-0">350,897</span>
+                  <h5 class="card-title text-uppercase text-muted mb-0">Upisani učenici</h5>
+                  <span class="h2 font-weight-bold mb-0">3500</span>
                 </div>
                 <div class="col-auto">
                   <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
@@ -19,7 +19,7 @@
               </div>
               <p class="mt-3 mb-0 text-muted text-sm">
                 <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                <span class="text-nowrap">Since last month</span>
+                <span class="text-nowrap">Od prošlog mjeseca</span>
               </p>
             </div>
           </div>
@@ -29,18 +29,18 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0">New users</h5>
-                  <span class="h2 font-weight-bold mb-0">2,356</span>
+                  <h5 class="card-title text-uppercase text-muted mb-0">Novi učenici</h5>
+                  <span class="h2 font-weight-bold mb-0">20</span>
                 </div>
                 <div class="col-auto">
-                  <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
-                    <i class="fas fa-chart-pie"></i>
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
                   </div>
                 </div>
               </div>
               <p class="mt-3 mb-0 text-muted text-sm">
-                <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 3.48%</span>
-                <span class="text-nowrap">Since last week</span>
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-nowrap">Ove sedmice</span>
               </p>
             </div>
           </div>
@@ -50,7 +50,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0">Sales</h5>
+                  <h5 class="card-title text-uppercase text-muted mb-0">Priodi</h5>
                   <span class="h2 font-weight-bold mb-0">924</span>
                 </div>
                 <div class="col-auto">
@@ -61,7 +61,7 @@
               </div>
               <p class="mt-3 mb-0 text-muted text-sm">
                 <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
-                <span class="text-nowrap">Since yesterday</span>
+                <span class="text-nowrap">Od prošlog puta</span>
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0">Performance</h5>
+                  <h5 class="card-title text-uppercase text-muted mb-0">Persormanse</h5>
                   <span class="h2 font-weight-bold mb-0">49,65%</span>
                 </div>
                 <div class="col-auto">
@@ -82,7 +82,7 @@
               </div>
               <p class="mt-3 mb-0 text-muted text-sm">
                 <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
-                <span class="text-nowrap">Since last month</span>
+                <span class="text-nowrap">Od prošlog mjeseca</span>
               </p>
             </div>
           </div>
@@ -98,20 +98,20 @@
         <div class="card-header bg-transparent">
           <div class="row align-items-center">
             <div class="col">
-              <h6 class="text-uppercase text-light ls-1 mb-1">Overview</h6>
-              <h2 class="text-white mb-0">Sales value</h2>
+              <h6 class="text-uppercase text-light ls-1 mb-1">Pregled</h6>
+              <h2 class="text-white mb-0">Prihod od kurseva</h2>
             </div>
             <div class="col">
               <ul class="nav nav-pills justify-content-end">
                 <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales"  (click)="data=datasets[0];updateOptions()">
                   <a href="javascript:void(0)" class="nav-link py-2 px-3" [ngClass]="{'active':clicked===true}" data-toggle="tab" (click)="clicked=true;clicked1=false">
-                    <span class="d-none d-md-block">Month</span>
+                    <span class="d-none d-md-block">Mjesec</span>
                     <span class="d-md-none">M</span>
                   </a>
                 </li>
                 <li class="nav-item" data-toggle="chart" data-target="#chart-sales"  (click)="data=datasets[1];updateOptions()">
                   <a href="javascript:void(0)" class="nav-link py-2 px-3" [ngClass]="{'active':clicked1===true}" data-toggle="tab" (click)="clicked=false;clicked1=true">
-                    <span class="d-none d-md-block">Week</span>
+                    <span class="d-none d-md-block">Sedmica</span>
                     <span class="d-md-none">W</span>
                   </a>
                 </li>
@@ -120,9 +120,9 @@
           </div>
         </div>
         <div class="card-body">
-          <!-- Chart -->
+          <!-- Graf -->
           <div class="chart">
-            <!-- Chart wrapper -->
+            <!-- Graf wrapper -->
             <canvas id="chart-sales" class="chart-canvas"></canvas>
           </div>
         </div>
@@ -133,8 +133,8 @@
         <div class="card-header bg-transparent">
           <div class="row align-items-center">
             <div class="col">
-              <h6 class="text-uppercase text-muted ls-1 mb-1">Performance</h6>
-              <h2 class="mb-0">Total orders</h2>
+              <h6 class="text-uppercase text-muted ls-1 mb-1">Pregled </h6>
+              <h2 class="mb-0">Ukupni upisi</h2>
             </div>
           </div>
         </div>
@@ -153,10 +153,10 @@
         <div class="card-header border-0">
           <div class="row align-items-center">
             <div class="col">
-              <h3 class="mb-0">Page visits</h3>
+              <h3 class="mb-0">Najgledaniji kursevi</h3>
             </div>
             <div class="col text-right">
-              <a href="#!" class="btn btn-sm btn-primary">See all</a>
+              <a href="#!" class="btn btn-sm btn-primary">Pogledaj sve</a>
             </div>
           </div>
         </div>
@@ -165,16 +165,16 @@
           <table class="table align-items-center table-flush">
             <thead class="thead-light">
               <tr>
-                <th scope="col">Page name</th>
-                <th scope="col">Visitors</th>
-                <th scope="col">Unique users</th>
-                <th scope="col">Bounce rate</th>
+                <th scope="col">Naziv</th>
+                <th scope="col">Posjete</th>
+                <th scope="col">Aktivni korsnici</th>
+                <th scope="col">Rast</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">
-                  /argon/
+                  C++ Za početnike
                 </th>
                 <td>
                   4,569
@@ -188,7 +188,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  /argon/index.html
+                  Java
                 </th>
                 <td>
                   3,985
@@ -202,7 +202,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  /argon/charts.html
+                  C#
                 </th>
                 <td>
                   3,513
@@ -216,7 +216,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  /argon/tables.html
+                  JavaScript
                 </th>
                 <td>
                   2,050
@@ -230,7 +230,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  /argon/profile.html
+                  Dart
                 </th>
                 <td>
                   1,795
@@ -252,10 +252,10 @@
         <div class="card-header border-0">
           <div class="row align-items-center">
             <div class="col">
-              <h3 class="mb-0">Social traffic</h3>
+              <h3 class="mb-0">Moji kursevi</h3>
             </div>
             <div class="col text-right">
-              <a href="#!" class="btn btn-sm btn-primary">See all</a>
+              <a href="#!" class="btn btn-sm btn-primary">Vidi sve</a>
             </div>
           </div>
         </div>
@@ -264,15 +264,15 @@
           <table class="table align-items-center table-flush">
             <thead class="thead-light">
               <tr>
-                <th scope="col">Referral</th>
-                <th scope="col">Visitors</th>
+                <th scope="col">Referal</th>
+                <th scope="col">Posjetioci</th>
                 <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">
-                  Facebook
+                  C++
                 </th>
                 <td>
                   1,480
@@ -290,7 +290,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Facebook
+                  C#
                 </th>
                 <td>
                   5,480
@@ -308,7 +308,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Google
+                  JavaScript
                 </th>
                 <td>
                   4,807
@@ -326,7 +326,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Instagram
+                  Dart
                 </th>
                 <td>
                   3,678
@@ -344,7 +344,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  twitter
+                  Java
                 </th>
                 <td>
                   2,645
